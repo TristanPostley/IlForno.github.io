@@ -1,0 +1,66 @@
+.container {width: 90%; max-width: 900px; margin: 10px auto;}
+.toggleMenu {display:  none; font-size:18px; color: #fff; width:96.2%; background:#cb5f19; padding:2%; margin-top:0; font-family: 'myriad_web_proregular';}
+.pull-down{background:url(../img/pull-down.png) 0 center no-repeat transparent; width:24px; height:24px; display:block; margin:0; float:right;}
+.toggleMenu:hover{color:#000;}
+.toggleMenu:hover .pull-down{background:url(../img/pull-down-hover.png) 0 center no-repeat;}
+.nav {list-style: none; *zoom: 1; text-transform:uppercase; margin:0 !important; padding:0 !important;}
+.nav:before,
+.nav:after {content: " "; display: table;}
+.nav:after {clear: both;}
+.nav ul {list-style: none;}
+.nav li a {color:#000; font-size:16px; padding:6px 14px; font-family: 'myriad_web_proregular';}
+.nav li a:hover {color:#fff; background-color: #cb5f19;}
+li#active2 > a{overflow:hidden;}
+.active{color:#fff !important; background-color:#cb5f19;}
+.active a{color:#fff !important;}
+.nav li li a{background-color:#cb5f19; color:#000;}
+.nav li li a:hover{background-color:#cb5f19; color:#FFF;}
+.nav li:first-child{}
+.nav li {position: relative;}
+.nav > li {float: left;}
+.nav > li > .parent {background-image: url(".../img/downArrow.png"); background-repeat: no-repeat; background-position: right;}
+.nav > li > a {display: block;}
+.nav li  ul {position: absolute; left: -9999px; width:220px; margin:0 !important; padding:0 !important;}
+.nav > li.hover > ul {left: 0;}
+.nav li li.hover ul {left: 100%; top: 0;}
+.nav li li{padding:0;}
+.nav li li:first-child{padding-left:0;}
+.nav li li a {display: block; position: relative; z-index:100; border-top: 1px solid #fff; font-size:15px; padding-left:15px;}
+.nav li li a:hover{background-color:#cb5f19; color:#FFF;}
+.nav li li:first-child a{}
+.nav li li li a {z-index:200;}
+.nav li li{background:none !important;}
+.nav li li li{}
+.nav li li ul{margin-left:1px !important; padding:0 !important;}
+.banner{z-index: 1;}
+
+@media screen and (max-width: 1000px) {
+	.menu-bg{background:none;}
+	nav.nav-class{width: 350px; position: relative;}
+	.nav{width:95.7%; position:absolute; z-index:99;}
+	.nav a{background:#cb5f19; color:#FFF; border-top:1px solid #fff; padding:0;}
+	.nav li:first-child{padding-left:0;}
+	.nav li{padding:0;}
+	.nav li:first-child a{}
+	.nav li a{padding-left:15px;}
+	.active {display: block;}
+	.nav > li {float: none;}
+	.nav > li > .parent {background-position: 95% 50%;}
+	.nav li .parent {background-image: url("../img/downArrow.png"); background-repeat: no-repeat; background-position: 95% 50%;}
+	.nav li .parent:hover{background-image: url("../img/downArrow-hover.png"); background-repeat: no-repeat; background-position: 95% 50%;}
+	.nav li ul {width:100%;}
+	.nav ul {display: block; width: 100%;}
+       .nav > li.hover > ul, .nav li li.hover ul {position: static;}
+	.nav li li ul{margin-left:0;}
+	.nav li li:first-child a{border-top:1px solid #FFF;}
+	.nav li li a{color:#FFF; padding:10px 25px; font-size:15px;}
+	.nav li li a:hover{color:#000;}
+}
+@media screen and (max-width: 480px){
+nav.nav-class{width: 100%; position: relative;}
+	.toggleMenu{margin-top:4px;}
+	.nav{width:95%;}
+}
+@media screen and (max-width: 479px){
+	.nav {width: 95%;}
+}
